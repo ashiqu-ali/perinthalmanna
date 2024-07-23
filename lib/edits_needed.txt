@@ -1,0 +1,3 @@
+corner radius of the images in homepage
+icon clarity of the navigation buttons (cattle,emergency,......)
+info about the us buttons at end of the homepage

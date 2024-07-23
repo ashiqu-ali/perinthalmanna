@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "179857872573",
+    "project_id": "sahayi-29347",
+    "storage_bucket": "sahayi-29347.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:179857872573:android:62eef047ed5e8cbffcc9d4",
+        "android_client_info": {
+          "package_name": "com.example.town_pmna_v1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAP13kqCEgMDXTBcoSSHMzmRv25jVy8d4U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
