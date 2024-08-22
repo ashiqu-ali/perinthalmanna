@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:town_pmna_v1/firebase_options.dart';
-import 'package:town_pmna_v1/pages/homepage/homepage.dart';
+import 'package:town_pmna_v1/pages/homepage.dart';
 import 'package:firebase_core/firebase_core.dart';
 
 void main() async {

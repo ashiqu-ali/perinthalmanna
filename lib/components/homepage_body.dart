@@ -1,24 +1,30 @@
 import 'package:flutter/material.dart';
-import 'package:town_pmna_v1/pages/helplinepage/helpline_page.dart';
-import 'package:town_pmna_v1/pages/homepage/widgets/helpline.dart';
-import 'package:town_pmna_v1/pages/homepage/widgets/hottopic.dart';
-import 'package:town_pmna_v1/pages/homepage/widgets/news.dart';
-import 'package:town_pmna_v1/pages/news/news_list_page.dart';
+import 'package:town_pmna_v1/pages/helpline_page.dart';
+import 'package:town_pmna_v1/pages/news_list_page.dart';
+import 'package:town_pmna_v1/widgets/helpline.dart';
+import 'package:town_pmna_v1/widgets/hottopic.dart';
+import 'package:town_pmna_v1/widgets/news.dart';
 
 class BodyPart extends StatefulWidget {
   const BodyPart({super.key});
 
   @override
-  // ignore: library_private_types_in_public_api
   _BodyPartState createState() => _BodyPartState();
 }
 
 class _BodyPartState extends State<BodyPart> {
   bool _showNews = true;
+  String? _selectedTopic;
 
   void _toggleView(bool showNews) {
     setState(() {
       _showNews = showNews;
+    });
+  }
+
+  void _filterNewsByTopic(String topic) {
+    setState(() {
+      _selectedTopic = topic;
     });
   }
 
@@ -42,9 +48,9 @@ class _BodyPartState extends State<BodyPart> {
             ),
           ],
         ),
-        if (_showNews) ...const [
-          HottopicWidget(),
-          ListNews(),
+        if (_showNews) ...[
+          HottopicWidget(onTopicSelected: _filterNewsByTopic),
+          ListNews(selectedTopic: _selectedTopic),
         ] else ...const [
           HelpLinePage(),
         ],

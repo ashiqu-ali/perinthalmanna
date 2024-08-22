@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:town_pmna_v1/pages/notificationpage/components/appbar.dart';
-import 'package:town_pmna_v1/pages/notificationpage/components/body.dart';
+import 'package:town_pmna_v1/components/notification_appbar.dart';
+import 'package:town_pmna_v1/components/notification_body.dart';
 
 class NotificationPage extends StatelessWidget {
   const NotificationPage({super.key});

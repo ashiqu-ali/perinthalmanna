@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:town_pmna_v1/pages/feedbackpage/feedback_page.dart';
-import 'package:town_pmna_v1/pages/notificationpage/notificationpage.dart';
-import 'package:town_pmna_v1/pages/profilepage/profile_page.dart';
+import 'package:town_pmna_v1/pages/feedback_page.dart';
+import 'package:town_pmna_v1/pages/notificationpage.dart';
+import 'package:town_pmna_v1/pages/profile_page.dart';
 import 'package:town_pmna_v1/utils/color.dart';
 
 class Appbar extends StatelessWidget {

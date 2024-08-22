@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:town_pmna_v1/pages/homepage/components/appbar.dart';
-import 'package:town_pmna_v1/pages/homepage/components/body.dart';
+import 'package:town_pmna_v1/components/homepage_appbar.dart';
+import 'package:town_pmna_v1/components/homepage_body.dart';
+import 'package:town_pmna_v1/utils/color.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -12,7 +13,7 @@ class HomePage extends StatelessWidget {
         preferredSize: Size.fromHeight(60),
         child: Appbar(),
       ),
-      body: SingleChildScrollView(child: BodyPart()),
+      body: BodyPart(),
     );
   }
 }

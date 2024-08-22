@@ -10,6 +10,13 @@ class NewsDetailPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back_ios_new_outlined,
+              color: Colors.white),
+          onPressed: () => Navigator.pop(context),
+        ),
+        automaticallyImplyLeading: false,
+        centerTitle: true,
         title: const Text('News Detail', style: TextStyle(color: Colors.white)),
         backgroundColor: primaryColor,
       ),
