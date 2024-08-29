@@ -25,14 +25,6 @@ class NewsDetailPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              'news Title',
-              style: TextStyle(
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold,
-                  color: primaryColor),
-            ),
-            const SizedBox(height: 10),
             Container(
               height: 200,
               width: double.infinity,
@@ -42,6 +34,14 @@ class NewsDetailPage extends StatelessWidget {
                   fit: BoxFit.cover,
                 ),
               ),
+            ),
+            const SizedBox(height: 10),
+            Text(
+              'news Title',
+              style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: primaryColor),
             ),
             const SizedBox(height: 10),
             const Text(

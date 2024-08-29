@@ -121,13 +121,13 @@ class ListNews extends StatelessWidget {
                                   ),
                                   GestureDetector(
                                     onTap: () {
-                                      Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                          builder: (context) =>
-                                              const NewsDetailPage(),
-                                        ),
-                                      );
+                                      // Navigator.push(
+                                      //   context,
+                                      //   MaterialPageRoute(
+                                      //     builder: (context) =>
+                                      //         const NewsDetailPage(),
+                                      //   ),
+                                      // );
                                     },
                                     child: Row(
                                       children: [
